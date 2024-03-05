@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html amp lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Gama</title>
+	<style amp-custom>
+		/*!
+Theme Name: bonus
+Text Domain: bonus
+*/
+
+		/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+		html {
+			line-height: 1.15;
+			-webkit-text-size-adjust: 100%;
+			overflow-x: hidden;
+			box-sizing: border-box;
+			display: block;
+			height: 100%;
+			padding: 0;
+			margin: 0
+		}
+
+		body {
+			margin: 0;
+			font-family: -apple-system, BlinkMacSystemFont, Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 15px;
+			line-height: 1.6;
+			padding: 0;
+			color: rgba(255, 255, 255, .8);
+			background: #1b2b38
+		}
+
+		a {
+			background-color: transparent
+		}
+
+		strong {
+			font-weight: bolder
+		}
+
+		img {
+			border-style: none
+		}
+
+		::-webkit-file-upload-button {
+			-webkit-appearance: button;
+			font: inherit
+		}
+
+		blockquote {
+			margin: 0 0 15px;
+			border-left: 4px solid #7b5cfe;
+			padding-left: 15px;
+			font-size: 17px;
+			font-style: italic;
+			color: #fff
+		}
+
+		*,
+		*::before,
+		*::after {
+			box-sizing: inherit
+		}
+
+		ul,
+		ol {
+			margin: 0 0 15px 15px;
+			padding: 0;
+			list-style: none
+		}
+
+		ul {
+			list-style: disc
+		}
+
+		ol {
+			list-style: decimal
+		}
+
+		img {
+			height: auto;
+			max-width: 100%
+		}
+
+		table {
+			margin: 0 0 15px;
+			width: 100%;
+			border: 1px solid rgba(255, 255, 255, .1);
+			border-collapse: collapse
+		}
+
+		table td {
+			border: 1px solid rgba(255, 255, 255, .1);
+			padding: 10px 15px
+		}
+
+		@media screen and (max-width:767px) {
+			.tablex {
+				width: 100%;
+				overflow: auto;
+				border: 1px solid rgba(255, 255, 255, .1);
+				box-sizing: border-box;
+				margin: 20px 0 20px
+			}
+
+			.tablex table {
+				margin: 0 0 0 0;
+				border: none;
+				border-radius: 0
+			}
+		}
+
+		a {
+			color: #ff7a00;
+			text-decoration: none
+		}
+
+		a:hover,
+		a:active {
+			color: #fff;
+			text-decoration: none
+		}
+
+		a:hover,
+		a:active {
+			outline: 0
+		}
+
+		.main-navigation {
+			display: block;
+			width: 100%
+		}
+
+		.main-navigation ul {
+			list-style: none;
+			margin: 0
+		}
+
+		.main-navigation li {
+			position: relative;
+			margin-left: 25px
+		}
+
+		.main-navigation a {
+			display: block;
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase
+		}
+
+		.main-navigation a:hover {
+			color: #ff7a00
+		}
+
+		@media screen and (min-width:992px) {
+
+			.main-navigation ul {
+				display: flex
+			}
+		}
+
+		.custom-header {
+			background: #13212d;
+			padding: 15px 0 10px;
+			margin-bottom: 15px
+		}
+
+		.home .custom-header {
+			margin-bottom: 0
+		}
+
+		#colophon {
+			background: #151a22;
+			padding: 50px 0 30px
+		}
+
+		#colophon .widget ul {
+			margin: 0;
+			padding: 0;
+			list-style: none
+		}
+
+		#colophon .widget ul li {
+			margin: 0 0 7px
+		}
+
+		#colophon .widget ul li a {
+			color: #fff;
+			font-size: 15px
+		}
+
+		#colophon .widget ul li a:hover {
+			color: #ff7a00
+		}
+
+		.custom-logo-link {
+			display: inline-block
+		}
+
+		h1,
+		h2,
+		h3,
+		.h2 {
+			line-height: 1.3;
+			clear: both;
+			margin: 0 0 15px;
+			font-weight: 700;
+			color: #fff
+		}
+
+		h1 {
+			font-size: 28px
+		}
+
+		h2,
+		.h2 {
+			font-size: 25px
+		}
+
+		h3 {
+			font-size: 22px
+		}
+
+		.home h2,
+		.home h1,
+		.home .h2 {
+			margin: 0 0 15px;
+			color: #fff;
+			font-weight: 400;
+			font-size: 20px;
+			text-transform: uppercase
+		}
+
+		.home h3 {
+			font-weight: 400;
+			font-size: 18px
+		}
+
+		p {
+			margin: 0 0 15px
+		}
+
+		#site-navigation {
+			padding-top: 6px;
+			background: transparent
+		}
+
+		.wrapper {
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+			position: relative;
+			box-sizing: border-box
+		}
+
+		.inner {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin-right: -15px;
+			margin-left: -15px
+		}
+
+		.col-3,
+		.col-4,
+		.col-5,
+		.col-9 {
+			position: relative;
+			width: 100%;
+			min-height: 1px;
+			padding-right: 15px;
+			padding-left: 15px
+		}
+
+		#welcome {
+			position: relative;
+			padding: 30px;
+			font-weight: 700;
+			color: #fff;
+			margin: 15px 0;
+			position: relative;
+			background: url(../img/banner.jpg) no-repeat right center;
+			background-size: cover;
+			height: 300px
+		}
+
+		.bonus {
+			font-size: 30px
+		}
+
+		#welcome a.x-button-2 {
+			display: block;
+			max-width: 200px;
+			padding: 10px;
+			margin: 30px 0
+		}
+
+		@media (max-width:991px) {
+			#welcome {
+				background-position: left center;
+				height: auto
+			}
+		}
+
+		@media (max-width:410px) {
+			.bonus {
+				font-size: 24px
+			}
+
+			#welcome {
+				padding: 30px 15px
+			}
+		}
+
+		a.x-button-1 {
+			text-transform: uppercase;
+			padding: 10px 30px;
+			color: #fff;
+			background: #7b5cfe;
+			font-weight: 700;
+			text-align: center
+		}
+
+		a.x-button-2 {
+			text-align: center;
+			text-transform: uppercase;
+			padding: 10px 30px;
+			font-weight: 700;
+			color: #111;
+			background: #dafe31
+		}
+
+		.site-top {
+			text-align: center;
+			padding-top: 6px
+		}
+
+		.site-top a {
+			margin-right: 10px
+		}
+
+		.site-info {
+			font-size: 13px;
+			padding-top: 30px
+		}
+
+		.site-info p {
+			margin: 0
+		}
+
+		#casino-news .inner {
+			margin-left: -7px;
+			margin-right: -7px
+		}
+
+		#casino a {
+			padding: 10px;
+			color: #fff;
+			background: #344b5e;
+			font-weight: 700;
+			margin: 15px auto;
+			display: block;
+			max-width: 230px;
+			text-align: center
+		}
+
+		#casino-news .col-3 {
+			padding-left: 7px;
+			padding-right: 7px
+		}
+
+		.developers {
+			text-align: center;
+			border-top: 1px solid #2f3542;
+			margin-top: 30px;
+			padding: 25px 0 20px
+		}
+
+		.developers img {
+			margin: 5px 15px;
+			max-height: 35px;
+			max-width: 140px;
+			filter: invert(1) opacity(.3)
+		}
+
+		.money {
+			text-align: center;
+			border-top: 1px solid #2f3542;
+			border-bottom: 1px solid #2f3542;
+			padding: 25px 0 20px
+		}
+
+		.money img {
+			margin: 5px 15px;
+			max-width: 120px;
+			max-height: 25px;
+			filter: invert(1) opacity(.3)
+		}
+
+		img.custom-logo {
+			width: 150px
+		}
+
+		.footer-links {
+			padding: 10px 0 10px
+		}
+
+		.footer-links a {
+			display: block;
+			margin: 0 0 15px
+		}
+
+		.home-content {
+			background: #101c26;
+			margin: 0 0 15px;
+			overflow: hidden
+		}
+
+		.home-content .entry-title {
+			padding: 5px 15px 15px;
+			min-height: 80px
+		}
+
+		#front-page .home-content .entry-title a {
+			color: #dafe31;
+			display: block;
+			font-weight: 700;
+			line-height: 1.3;
+			text-decoration: none
+		}
+
+		#front-page .home-content .entry-title a:hover {
+			color: #fff
+		}
+
+		.right-text {
+			text-align: right
+		}
+
+		.site-info ul {
+			margin: 0 0 15px
+		}
+
+		.site-info ul li {
+			display: inline-block;
+			margin-left: 15px
+		}
+
+		.wrap-inner {
+			background: #13212d;
+			padding: 15px;
+			margin-bottom: 15px
+		}
+
+		#casino-news .wrap-inner {
+			padding: 15px 15px 1px
+		}
+
+		@media (min-width:992px) {
+
+			.col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 25%;
+				flex: 0 0 25%;
+				max-width: 25%
+			}
+
+			.col-4 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 33.333333%;
+				flex: 0 0 33.333333%;
+				max-width: 33.333333%
+			}
+
+			.col-5 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 41.666667%;
+				flex: 0 0 41.666667%;
+				max-width: 41.666667%
+			}
+
+			.col-9 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 75%;
+				flex: 0 0 75%;
+				max-width: 75%
+			}
+		}
+
+		@media (min-width:576px) {
+			.wrapper {
+				max-width: 540px
+			}
+		}
+
+		@media (min-width:768px) {
+			.wrapper {
+				max-width: 720px
+			}
+		}
+
+		@media (min-width:992px) {
+			.wrapper {
+				max-width: 960px
+			}
+		}
+
+		@media (min-width:1230px) {
+			.wrapper {
+				max-width: 1200px
+			}
+		}
+
+		@media screen and (min-width:992px) {
+
+			.nav-menu {
+				float: right
+			}
+		}
+
+		@media (min-width:992px) and (max-width:1229px) {
+
+			.site-top a.x-button-1,
+			.site-top a.x-button-2 {
+				padding: 5px 20px
+			}
+		}
+
+		@media screen and (max-width:1229px) {
+
+			.site-info ul {
+				padding-top: 5px
+			}
+
+			.site-info ul li {
+				margin-left: 0;
+				margin-right: 15px
+			}
+		}
+
+		@media screen and (max-width:991px) {
+
+			.site-top {
+				padding: 20px 0 10px
+			}
+
+			.custom-header {
+				padding: 15px 0 0
+			}
+
+			#casino-news .col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 50%;
+				flex: 0 0 50%;
+				max-width: 50%
+			}
+
+			.site-info ul li {
+				margin: 0 8px 5px
+			}
+
+			#casino-news img {
+				width: 100%
+			}
+
+			#colophon .site-info .col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%
+			}
+
+			.site-info,
+			.col-9.right-text {
+				text-align: center
+			}
+
+			#colophon .col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 50%;
+				flex: 0 0 50%;
+				max-width: 50%
+			}
+
+			#colophon .col-3 {
+				padding-bottom: 20px
+			}
+
+			.main-navigation {
+				padding-top: 27px;
+				text-align: center
+			}
+
+			.custom-header .col-3,
+			.custom-header .col-4 {
+				text-align: center
+			}
+
+			.site-top a {
+				margin-right: 0
+			}
+
+			.site-top a.x-button-1 {
+				margin-right: 10px
+			}
+
+			.main-navigation ul {
+				padding: 0;
+				margin: 10px 0 20px
+			}
+
+			.main-navigation li {
+				display: inline-block;
+				margin-right: 10px;
+				margin-left: 10px
+			}
+
+			.nav-menu {
+				padding-top: 0px
+			}
+		}
+
+		@media screen and (max-width:767px) {
+			.developers img {
+				margin: 5px 7px;
+			}
+
+			.money img {
+				margin: 5px 7px
+			}
+
+			#casino-news .col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%
+			}
+
+			.home-content .entry-title {
+				min-height: auto
+			}
+		}
+
+		@media screen and (max-width:450px) {
+			#colophon .col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%
+			}
+		}
+
+		@media screen and (max-width:370px) {
+
+			.footer-links a {
+				margin-right: 0;
+				margin-bottom: 15px;
+				display: block
+			}
+		}
+
+		@media screen and (max-width:360px) {
+			.site-top a {
+				display: block
+			}
+
+			.site-top a.x-button-1 {
+				margin-right: 0;
+				margin-bottom: 10px
+			}
+
+			.main-navigation li {
+				display: block;
+				margin-right: 0;
+				margin-left: 0;
+				margin-bottom: 5px
+			}
+
+			.main-navigation li a {
+				background: #1b2b38;
+				padding: 7px
+			}
+		}
+
+		body {
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+			max-width: var(--wp--style--global--content-size);
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.wp-block-navigation a:where(:not(.wp-element-button)) {
+			color: inherit;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+	</style>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<style amp-boilerplate>
+		body {
+			-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			animation: -amp-start 8s steps(1, end) 0s 1 normal both
+		}
+
+		@-webkit-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-moz-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-ms-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-o-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+	</style><noscript>
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+		</style>
+	</noscript>
+	<link rel="canonical" href="index.html">
+</head>
+
+<body class="home page-template page-template-home page-template-home-php page page-id-21 wp-custom-logo">
+	<div id="page" class="site">
+		<header id="masthead" class="site-header">
+			<div class="custom-header">
+				<div class="wrapper">
+					<div class="inner">
+						<div class="col-3">
+							<a href="" class="custom-logo-link" rel="home" aria-current="page">
+								<img width="600" height="152" src="content/img/logo.png" class="custom-logo" alt="" decoding="async"
+									fetchpriority="high" srcset="content/img/logo.png 600w, content/img/logo-300x76.png 300w"
+									sizes="(max-width: 600px) 100vw, 600px" />
+							</a>
+						</div>
+						<div class="col-4">
+							<div class="site-top">
+								<!--noindex-->
+								<a class="x-button-1" href="" target="_blank" rel="nofollow">Вход</a> <a class="x-button-2" href=""
+									target="_blank" rel="nofollow">Регистрация</a>
+								<!--/noindex-->
+							</div>
+						</div>
+						<div class="col-5">
+							<nav id="site-navigation" class="main-navigation">
+								<div class="menu-menu-1-container">
+									<ul id="primary-menu" class="nav-menu">
+										<li id="menu-item-23"
+											class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a
+												href="">Статьи</a></li>
+									</ul>
+								</div>
+							</nav>
+							<!-- #site-navigation -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- #masthead -->
+		<div class="wrapper">
+			<div id="welcome">
+				<div class="bonus">Бонус понедельника</div>
+				<div class="bonus">50% на депозит</div>
+				<a class="x-button-2" href="" target="_blank" rel="nofollow">Получить</a>
+			</div>
+		</div>
+
+		<div id="front-page">
+			<div id="casino-news">
+				<div class="wrapper">
+					<div class="wrap-inner">
+						<div class="inner games-list">
+							<article class="col-3">
+								<div class="home-content">
+									<a href="">
+										<img width="350" height="240" src="content/img/1.webp"
+											class="attachment-slot size-slot wp-post-image" alt="" decoding="async" />
+									</a>
+								</div>
+							</article>
+							<article class="col-3">
+								<div class="home-content">
+									<a href="">
+										<img width="350" height="240" src="content/img/2.webp"
+											class="attachment-slot size-slot wp-post-image" alt="" decoding="async" />
+									</a>
+								</div>
+							</article>
+							<article class="col-3">
+								<div class="home-content">
+									<a href="">
+										<img width="350" height="240" src="content/img/3.webp"
+											class="attachment-slot size-slot wp-post-image" alt="" decoding="async" />
+									</a>
+								</div>
+							</article>
+							<article class="col-3">
+								<div class="home-content">
+									<a href="">
+										<img width="350" height="240" src="content/img/4.webp"
+											class="attachment-slot size-slot wp-post-image" alt="" decoding="async" />
+									</a>
+								</div>
+							</article>
+							<article class="col-3">
+								<div class="home-content">
+									<a href="">
+										<img width="350" height="240" src="content/img/5.webp"
+											class="attachment-slot size-slot wp-post-image" alt="" decoding="async" />
+									</a>
+								</div>
+							</article>
+							<article class="col-3">
+								<div class="home-content">
+									<a href="">
+										<img width="350" height="240" src="content/img/6.webp"
+											class="attachment-slot size-slot wp-post-image" alt="" decoding="async" />
+									</a>
+								</div>
+							</article>
+							<article class="col-3">
+								<div class="home-content">
+									<a href="">
+										<img width="350" height="240" src="content/img/7.webp"
+											class="attachment-slot size-slot wp-post-image" alt="" decoding="async" />
+									</a>
+								</div>
+							</article>
+							<article class="col-3">
+								<div class="home-content">
+									<a href="">
+										<img width="350" height="240" src="content/img/8.webp"
+											class="attachment-slot size-slot wp-post-image" alt="" decoding="async" />
+									</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="casino">
+				<div class="wrapper">
+					<div class="wrap-inner">
+						<h1>Играть в Gama Casino на официальном сайте онлайн казино</h1>
+						<p>
+							Молодая и амбициозная площадка с азартными развлечениями быстро завоевала признание среди своих клиентов.
+							Пользователи могут играть онлайн на официальном сайте Gama Casino бесплатно и без регистрации в
+							гостевом формате. После создания аккаунта открывается доступ к акциям и ставкам на деньги. Для игры с
+							мобильных устройств предусмотрена облегченная версия платформы, которая наделена полным функционалом. На
+							сайте работает эффективный и дружелюбный персонал службы поддержки клиентов. Операторы доступны
+							круглосуточно.
+						</p>
+						<h2>Базовая информация об официальном сайте Gama Casino</h2>
+						<p>
+							Виртуальная площадка предлагает большой выбор азартных игр. В каталоге онлайн-сервиса представлено более
+							3000 наименований. В казино поддерживается несколько валют и платежных методов. Финансовые операции
+							обрабатываются быстро. Для защиты персональной и банковской информации применяются методы шифрования.
+						</p>
+						<h3>История создания и лицензия</h3>
+						<p>
+							Игровая площадка открылась в 2023 году. Казино предоставляет услуги в соответствии с лицензией Кюрасао.
+							Номер документа — NV #365/JAZ. В футере сайта размещен кликабельный логотип регулятора. При нажатии на
+							иконку, игрок будет перенаправлен на страницу с юридической информацией.
+						</p>
+						<h3>Рабочее зеркало</h3>
+						<p>
+							Проблемы доступа к платформе оператор решил с помощью зеркало официального сайта gama casino. Зеркало Gama
+							Casino ― это абсолютная копия официального сервиса, но с измененным доменом. Ссылку на вход на
+							актуальное зеркало казино gama можно найти в интернете, вбив соответствующий вопрос в поисковике, или у
+							менеджеров поддержки. Служба поддержки всегда подскажет как найти рабочее зеркало gama casino на
+							сегодня.
+						</p>
+						<h3>Отзывы пользователей о сайте</h3>
+						<p>
+							Сервис работает недавно, поэтому какого-то определенного мнения у клиентов еще нет. Игроки в целом
+							отзываются о казино неплохо. Оператор старается выполнять взятые на себя обязательства. Казино предлагает
+							хорошо разработанный информационный сайт, внушительный каталог развлечений и выбор акций. Выигрыши
+							выводятся быстро и без задержек.
+						</p>
+						<p><a href="">Отзывы</a></p>
+						<h3>Дизайн сайта казино Gama</h3>
+						<p>
+							Страницы сервиса выполнены в спокойных темных тонах. Вверху главного экрана платформы размещены баннеры с
+							промопредложениями казино и турнирами, которые проводятся на площадке. Ниже представлена информация
+							про общую сумму джекпотов, график работы поддержки и другие сведения.
+						</p>
+						<p>Кнопки, открывающие главные разделы, расположены на боковой и верхней панелях управления. Центр страницы
+							занимает каталог игр. В футере можно найти ссылки на вкладки с полезной информацией.</p>
+						<p>Регистрация и вход в Gama Casino на русском языке осуществляются с помощью электронной почты и пароля.
+							Авторизоваться и играть на платформе можно с любых устройств и играть в gama casino на деньги.</p>
+						<h3>Плюсы и минусы</h3>
+						<p>Прежде чем вносить депозит и совершать ставки в казино на собственные деньги, рекомендуется оценить все
+							его преимущества и недостатки. Сделать это можно, изучив отзывы клиентов сервиса.</p>
+						<div class="tablex">
+							<table>
+								<tbody>
+									<tr>
+										<td><strong>Плюсы</strong></td>
+										<td><strong>Минусы</strong></td>
+									</tr>
+									<tr>
+										<td>Большая коллекция игр</td>
+										<td>Некоторые игры недоступны в ряде стран</td>
+									</tr>
+									<tr>
+										<td>Действующая лицензия</td>
+										<td>Маленький выбор столов с живыми дилерами</td>
+									</tr>
+									<tr>
+										<td>Вывод выигрышей в течение часа</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Круглосуточная поддержка клиентов</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Хороший выбор валют, есть возможность открывать счет в рублях</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Удобная мобильная версия для Android и iOS</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Регулярные турниры</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Постоянные акции и промопредложения, включая еженедельный кешбэк</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p>
+							Некоторые клиенты сервиса относят к минусам всего один метод регистрации, а также отсутствие раздела с
+							карточными и настольными играми. Но в целом многие пользователи остались довольны, протестировав работу
+							платформы.
+						</p>
+						<h2>Актуальные бонусы в казино</h2>
+						<p>После регистрации учетной записи посетители сервиса получают доступ к разнообразной системе поощрений,
+							которая позволят играть в Gama Casino в 2024</p>
+						<p>
+							на дополнительные средства. Бонусы на виртуальной платформе выдаются в виде реальных денег на счет,
+							бесплатных вращений и баллов лояльности. Каждую неделю начисляется кешбэк. Также есть возможность
+							активировать промокоды.
+						</p>
+						<h3>За пополнение счета</h3>
+						<p>
+							Авторизованным посетителям доступно несколько бонусов за депозит: приветственный пакет и еженедельные
+							промопредложения. Стартовый набор включает в себя поощрения за первые четыре пополнения баланса и в сумме
+							составляет 425% + 200 ФС.
+						</p>
+						<div class="tablex">
+							<table>
+								<tbody>
+									<tr>
+										<td colspan="3"><strong>Приветственный пакет казино</strong></td>
+									</tr>
+									<tr>
+										<td><strong>Пополнение</strong></td>
+										<td><strong>Размер и вид бонуса</strong></td>
+										<td><strong>Максимальная сумма</strong></td>
+									</tr>
+									<tr>
+										<td>Первое</td>
+										<td>
+											100% + 100 ФС<br />
+											100% + 150 ФС<br />
+											200% + 200 ФС
+										</td>
+										<td>
+											30 000 ₽<br />
+											35 000 ₽<br />
+											50 000 ₽
+										</td>
+									</tr>
+									<tr>
+										<td>Второе</td>
+										<td>100%</td>
+										<td rowspan="3">20 000 ₽</td>
+									</tr>
+									<tr>
+										<td>Третье</td>
+										<td>50%</td>
+									</tr>
+									<tr>
+										<td>Четвертое</td>
+										<td>75%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p>
+							Использовать бесплатные вращения можно только в лицензионных игровых автоматах на официальном сайте казино
+							Gama, которые указаны в описании акции. Размер бонуса за первый депозит зависит от суммы пополнения.
+							Для активации приветственного пакета нужно перечислить на баланс минимум 1000 ₽.
+						</p>
+						<p>Бонусы начисляются с требованиями по отыгрышу. Вейджер для денежных поощрений составляет х40, для
+							фриспинов ― х45. Время, отведенное на отыгрыш — 7 дней.</p>
+						<p><a href="">Бонусы</a></p>
+						<h3>Фриспины</h3>
+						<p>За пополнение баланса по четвергам игроки получают бесплатные вращения. Фриспины начисляются для автомата
+							Big Bass Bonanza с вейджером х45. Количество бесплатных вращений зависит от суммы пополнения счета:</p>
+						<ul>
+							<li>Депозит в 25 EUR принесет 20 фриспинов.</li>
+							<li>Если игрок пополнит счет на 85 EUR, он получит 80 вращений.</li>
+							<li>За перевод в 220 EUR начисляется 200 фриспинов.</li>
+						</ul>
+						<p>Максимальная сумма, которую пользователь сможет вывести после отыгрыша бонусных вращений, составляет х20
+							от начисленного вознаграждения. В течение дня можно активировать до четырех промопредложений.</p>
+						<blockquote>
+							<p>Если, участвуя в акции «Бонусы четверга», пользователь внесет депозит 650 EUR, то он получит 75
+								фриспинов с максимальной суммой выигрыша х40.</p>
+						</blockquote>
+						<h3>Программа лояльности</h3>
+						<p>
+							В полной версии Gama Casino в России есть VIP-система. Участвуя в программе лояльности, посетители
+							получают балл опыта за каждый 1 евро, потраченный на ставки. Всего в системе рейтингов 5 уровней.
+							Максимальный ― Master.
+						</p>
+						<p>Получение нового статуса приносит дополнительные привилегии. Среди них:</p>
+						<ul>
+							<li>Увеличенные лимиты на вывод денег.</li>
+							<li>Пониженный вейджер отыгрыша бонусов.</li>
+							<li>Участие в турнирах. Доступ открывается со второго уровня в программе лояльности.</li>
+							<li>Более высокий процент кешбэка.</li>
+							<li>Бонус за переход на новый уровень.</li>
+							<li>Возможность обменять баллы опыта на реальные деньги.</li>
+							<li>Подарок на день рождения.</li>
+						</ul>
+						<p>Игроки, которые достигли уровня «Master», получают персонального менеджера. Также им доступны специальные
+							предложения от администрации сайта за активность.</p>
+						<h3>Кешбэк в казино</h3>
+						<p>
+							Возврат средств начисляется по понедельникам в 1:00 по UTC. Кешбэк рассчитывается по формуле: (общие
+							ставки &#8212; сумма выигрышей) × % бонуса. Компенсация начисляется с требованием по вейджеру. Коэффициент
+							отыгрыша зависит от статуса пользователя.
+						</p>
+						<p>
+							Клиенты казино с начальным уровнем в программе лояльности получают 5% возврата. Игрокам, которые достигли
+							статуса Regular и выше, начисляется 10%. Забрать кешбэк можно с понедельника по среду. Отыграть
+							средства нужно в течение суток после активации.
+						</p>
+						<blockquote>
+							<p>Пользователи, которые достигли максимального уровня в программе лояльности, получают кешбэк ежедневно.
+								На выполнение требований вейджера отводится два дня с момента активации.</p>
+						</blockquote>
+						<p><a href="">Кэшбэк</a></p>
+						<h3>Промокоды</h3>
+						<p>
+							Участие в акциях с бонусными купонами приносит пользователям дополнительные привилегии. После ввода
+							приветственного промокода новички получают фриспины, которые позволяют бесплатно играть в казино Gama.
+							Действующим клиентам доступны поощрения за депозит и увеличенный кешбэк.
+						</p>
+						<p>
+							Найти бонусные комбинации можно на страницах социальных сетей, в канале Telegram и на сайтах-партнерах.
+							Активация промокодов для новичков происходит в регистрационной форме. Действующие клиенты вводят
+							акционные комбинации в Личном кабинете на вкладке «Дашборд».
+						</p>
+						<h3>Специальные акции</h3>
+						<p>Каждый понедельник игроки получают бонус 50% за любой депозит от 30 EUR и больше. Отыграть средства нужно
+							с вейджером х45. Максимальная сумма поощрения составляет 300 EUR.</p>
+						<h2>Проверенные производители софта в Gama Casino</h2>
+						<p>
+							Оператор сотрудничает с 30 провайдерами. Все поставщики софта ― это известные студии, которые имеют
+							лицензии. В списке доступных брендов можно увидеть Belatra, Evolution Gaming, Igrosoft, BGaming,
+							Spinomenal
+							и другие.
+						</p>
+						<blockquote>
+							<p>У посетителей платформы есть возможность совершать ставки в предложениях всех поставщиков софта или
+								выбрать одного-двух провайдеров.</p>
+						</blockquote>
+						<h2>Популярные игры на сайте казино</h2>
+						<p>
+							Представлено несколько видов азартных развлечений. Посетителям портала доступны ставки в слотах, лайв
+							казино и быстрых играх. Для удобного поиска предусмотрены фильтры «Избранное», «Последние», «Популярные»,
+							«Новые».
+						</p>
+						<h3>Игровые автоматы</h3>
+						<p>На виртуальной площадке можно найти практически все виды слотов. Игрокам доступны:</p>
+						<ul>
+							<li>Классические аппараты с 3-6 барабанами и традиционной механикой геймплея.</li>
+							<li>Игровые автоматы в казино gama на реальные деньги с джекпотами и покупкой бонусных функций.</li>
+							<li>Автоматы с кластерной схемой формирования призовых цепочек и другие разновидности.</li>
+						</ul>
+						<p>На иконке каждого слота указан производитель. Чтобы посмотреть таблицу выплат, нужно нажать на кнопку
+							«Помощь» или значок «i» после загрузки автомата.</p>
+						<h3>Игры с живым дилером</h3>
+						<p>
+							Чтобы насладиться атмосферой наземных заведений, не покидая дома, пользователям достаточно зайти в новое
+							казино Gama и открыть вкладку с играми с живыми дилерами. В этом разделе представлено несколько видов
+							рулетки, блэкджека, баккары и крэпса. Есть и игровые шоу типа Колеса Фортуны, Mega Ball и монополии.
+						</p>
+						<p>Всего в live казино предлагается более 200 наименований. Развлечения с живыми крупье поставляют известные
+							студии Evolution Gaming и Pragmatic Play Live.</p>
+						<p>
+							В играх из раздела «Лайв казино» нет генератора случайных чисел. Но клиенты онлайн казино гама могут не
+							опасаться за честность исходов сессии. Прием ставок и объявление результатов осуществляются в режиме
+							реального времени. За действиями крупье следят несколько камер, которые установлены в студии и передают
+							трансляцию на экран пользователя.
+						</p>
+						<h3>Настольные и карточные игры</h3>
+						<p>Отдельного раздела с этим видом развлечений в лобби казино нет. Но найти настольные и карточные игры
+							можно, установив фильтры по провайдерам или введя название в поисковое окно.</p>
+						<p><a href="">Регистрация</a></p>
+						<h2>Регистрация аккаунта в казино Гама</h2>
+						<p>Создать учетную запись на игровой площадке можно только по электронной почте. Для регистрации нужно
+							совершить следующие действия:</p>
+						<ol>
+							<li>Посетить официальный сайт казино.</li>
+							<li>Нажать кнопку «Регистрация».</li>
+							<li>Ввести действующий электронный адрес.</li>
+							<li>Придумать надежный пароль.</li>
+							<li>Ввести промокод (если он есть).</li>
+							<li>Выбрать валюту и страну проживания.</li>
+							<li>Поставить галочки рядом с надписями «Я согласен с «Условиями и положениями» и «Я достиг 18 лет».</li>
+							<li>Нажать на кнопку «Регистрация».</li>
+						</ol>
+						<p>Прежде чем соглашаться с правилами казино гама, рекомендуется их изучить. В регистрационной форме игроки
+							могут выбрать и активировать один из приветственных бонусов за первое пополнение баланса.</p>
+						<blockquote>
+							<p>Посетители платформы, которые заводят аккаунты на одноразовые электронные адреса, не могут участвовать
+								в акциях. Если выявлено нарушение этого условия, то доступ к Личному кабинету будет заблокирован.</p>
+						</blockquote>
+						<h3>Верификация пользователя</h3>
+						<p>Виртуальная площадка работает в соответствии с правовыми нормами и придерживается политики «Знай своего
+							клиента». Поэтому верификация пользователей на онлайн-платформе обязательна.</p>
+						<p>Чтобы пройти идентификацию, клиентам сервиса следует:</p>
+						<ol>
+							<li>Войти в Личный кабинет и открыть «Настройки аккаунта».</li>
+							<li>На вкладке с персональной информацией указать имя, фамилию, дату рождения и пол.</li>
+							<li>Ввести физический адрес вместе с почтовым индексом.</li>
+							<li>Указать номер телефона и подтвердить его.</li>
+							<li>Проверить надежность пароля.</li>
+							<li>Нажать на кнопку «Сохранить изменения».</li>
+						</ol>
+						<p>Все предоставленные персональные данные нужно подтвердить. Для этого необходимо открыть страницу
+							«Верификация» и отправить копии следующих документов:</p>
+						<ul>
+							<li>Паспорта, ID карты или водительских прав.</li>
+							<li>Любого документа, на котором указан физический адрес.</li>
+						</ul>
+						<p>Также потребуется прикрепить и отправить свое селфи. Максимальный размер файла не должен превышать 4 MB.
+							Принимаются форматы .png, .jpg, .gif, .pdf, .jpeg.</p>
+						<h2>Играть на сайте казино Гама бесплатно и на деньги</h2>
+						<p>
+							В казино есть формат, в котором пользователи размещают ставки на условные монеты сервиса. Для активации
+							игр в бесплатном режиме регистрация на сайте не обязательна. Чтобы запустить бесплатные игровые автоматы
+							в gama casino, нужно открыть лобби портала и нажать на надпись «Демо» на обложке слота.
+						</p>
+						<h2>Игра на мобильных устройствах</h2>
+						<p>
+							Пользователи могут размещать ставки в автоматах и других азартных развлечениях со своих телефонов и
+							планшетов. Для этих целей оператор разработал скачиваемое приложение и мобильную версию, которые
+							совместимы
+							со всеми устройствами на базе Android или iOS.
+						</p>
+						<p>
+							На платформах для смартфонов и планшетов улучшенная навигация, что позволяет клиентам быстро найти нужную
+							игру и играть в игровые автоматы казино gama. А многие второстепенные разделы и категории спрятаны в
+							меню-бургер.
+						</p>
+						<p><a href="">Скачать казино</a></p>
+						<h3>Мобильная версия сайта</h3>
+						<p>
+							Платформа для портативных устройств разрабатывалась с применением технологии HTML5. Это позволяет играть в
+							казино без загрузки дополнительных программ. После перехода на площадку сайт автоматически
+							адаптируется под размеры и ОС девайса.
+						</p>
+						<h3>Особенности приложений для Андроид и iOS</h3>
+						<p>
+							Установить программное обеспечение можно лишь с официального сайта. Приложение совместимо с устройствами
+							Android 8.0 или iOS 11.0 и выше. Скачиваемый софт имеет аналогичный функционал. В приложении
+							пользователи могут регистрировать аккаунт, совершать ставки на деньги, оформлять финансовые операции и
+							выполнять другие действия.
+						</p>
+						<p><a href="">Приложение на Айфон</a></p>
+						<h2>Как пополнить баланс и вывести выигрыш из казино Гама.</h2>
+						<p>Для проведения финансовых операций на виртуальной платформе предусмотрен раздел «Депозит». В нем
+							посетители могут как пополнить баланс, так и вывести средства.</p>
+						<p>После перехода на вкладку с кассой игрокам следует:</p>
+						<ol>
+							<li>Выбрать тип транзакции, нажав на кнопку «Депозит» или «Вывод средств».</li>
+							<li>Открыть форму с платежным методом.</li>
+							<li>Ввести сумму операции.</li>
+							<li>Указать реквизиты.</li>
+							<li>Подать заявку на рассмотрение, нажав на «Депозит» или «Вывод средств».</li>
+						</ol>
+						<p>
+							В некоторых платежных сервисах потребуется подтвердить пополнение счета. Нужно ввести код, присланный по
+							SMS. При заполнении заявки на выплату игрокам предоставляется информация с общим балансом и суммой,
+							доступной к выводу.
+						</p>
+						<p>В разделе с финансовыми операциями также есть вкладка «История». На ней посетители платформы могут
+							посмотреть все свои депозиты, выплаты и совершенные ставки.</p>
+						<h3>С какими платежными системами работает сайт</h3>
+						<p>
+							Внести депозит или запросить выплату пользователи могут с помощью банковских карт и переводов,
+							криптообменников и электронных сервисов. На азартной платформе есть список стран с ограниченным доступом к
+							той
+							или иной платежной системе. Поэтому казино вправе обработать транзакцию с помощью финансового сервиса,
+							отличного от указанного пользователем. В этом случае с клиентом свяжется менеджер поддержки и предложит
+							альтернативные варианты.
+						</p>
+						<h3>Комиссии, ограничения и скорость платежей</h3>
+						<p>Минимальная сумма пополнения на игровой площадке составляет 100 рублей. Также действуют лимиты,
+							установленные платежным сервисом.</p>
+						<div class="tablex">
+							<table>
+								<tbody>
+									<tr>
+										<td colspan="3"><strong>Ограничения на депозит</strong></td>
+									</tr>
+									<tr>
+										<td><strong>Финансовая система</strong></td>
+										<td><strong>Минимум</strong></td>
+										<td><strong>Максимум</strong></td>
+									</tr>
+									<tr>
+										<td>Пластиковые карты</td>
+										<td>500 ₽</td>
+										<td>150 000 ₽</td>
+									</tr>
+									<tr>
+										<td>Кошельки Piastrix</td>
+										<td>100 ₽</td>
+										<td>300 000 ₽</td>
+									</tr>
+									<tr>
+										<td>Перевод с карты на карту казино и онлайн-банкинг</td>
+										<td>500 ₽</td>
+										<td>99 000 ₽</td>
+									</tr>
+									<tr>
+										<td>Binance Pay</td>
+										<td>100 ₽</td>
+										<td>6 000 000 ₽</td>
+									</tr>
+									<tr>
+										<td>СПБ (переводы по номеру телефона)</td>
+										<td>500 ₽</td>
+										<td>150 000 ₽</td>
+									</tr>
+									<tr>
+										<td>Криптообменники</td>
+										<td>300 ₽</td>
+										<td>6 000 000 ₽</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p>
+							Заявки на кэшаут принимаются от 500 рублей. Верхние лимиты выводов зависят от игрового статуса
+							пользователя. Чем выше уровень клиента в программе лояльности, тем большую сумму он может получить в
+							течение
+							установленного времени.
+						</p>
+						<div class="tablex">
+							<table>
+								<tbody>
+									<tr>
+										<td colspan="4"><strong>Действующие лимиты на максимальный вывод в казино Gama</strong></td>
+									</tr>
+									<tr>
+										<td><strong>Игровой статус пользователя</strong></td>
+										<td><strong>В день</strong></td>
+										<td><strong>В неделю</strong></td>
+										<td><strong>В месяц</strong></td>
+									</tr>
+									<tr>
+										<td>New</td>
+										<td colspan="3">15 000 ₽ в сутки</td>
+									</tr>
+									<tr>
+										<td>Player</td>
+										<td>150 000 ₽</td>
+										<td>500 000 ₽</td>
+										<td>1 250 000 ₽</td>
+									</tr>
+									<tr>
+										<td>Regular</td>
+										<td>300 000 ₽</td>
+										<td>1 200 000 ₽</td>
+										<td>3 000 000 ₽</td>
+									</tr>
+									<tr>
+										<td>Pro</td>
+										<td>500 000 ₽</td>
+										<td>2 500 000 ₽</td>
+										<td>5 000 000 ₽</td>
+									</tr>
+									<tr>
+										<td>Master</td>
+										<td colspan="3">от 800 000 ₽ в сутки</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p>
+							Выводы средств из казино производятся ежедневно без выходных. Если размер выплаты равен или меньше 1000
+							EUR, то на рассмотрение заявки отводится 24 часа. Когда снимаемая сумма больше указанной, обработка
+							запроса может занять до трех дней.
+						</p>
+						<blockquote>
+							<p>Оператор выводит выигранные средства без снятия комиссионных сборов, если в платежном методе не
+								написано другое.</p>
+						</blockquote>
+						<p><a href="">Техподдержка</a></p>
+						<h2>Работа службы поддержки казино</h2>
+						<p>Обратиться к операторам саппорта пользователи могут на официальном сайте казино. После нажатия на кнопку
+							«Связь с нами» откроется форма для заполнения. На вкладке «Контакты» нужно указать:</p>
+						<ul>
+							<li>Свое имя.</li>
+							<li>Тему обращения.</li>
+							<li>В специальной форме описать ситуацию или задать вопрос.</li>
+						</ul>
+						<p>Электронный адрес казино и почта пользователя будут внесены автоматически. После заполнения формы нужно
+							нажать на «Отправить сообщение». Ответ придет на email игрока в течение суток.</p>
+						<blockquote>
+							<p>У казино есть канал в Telegram. Подписавшись на него, пользователи участвуют в ежедневных розыгрышах
+								промокодов и бонусов.</p>
+						</blockquote>
+						<p>
+							Также предусмотрен живой чат. Чтобы обратиться к менеджерам с его помощью, нужно нажать на специальный
+							значок внизу страницы онлайн-площадки. В открывшейся форме потребуется указать свое имя. Далее следует
+							нажать на кнопку «Начать чат». Менеджеры отвечают в течение 10 минут.
+						</p>
+						<div class="faq" itemscope itemtype="http://schema.org/FAQPage">
+							<h2>Частые вопросы</h2>
+							<div class="faq__item" itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+								<h3 class="faq__label" itemprop="name">Можно ли зарегистрироваться через социальную сеть?</h3>
+								<div class="faq__body" itemscope itemprop="acceptedAnswer" itemtype="http://schema.org/Answer">
+									<p itemprop="text">Нет. Завести учетную запись в казино получится только с помощью электронной почты.
+									</p>
+								</div>
+							</div>
+							<div class="faq__item" itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+								<h3 class="faq__label" itemprop="name">На что можно обменять баллы лояльности?</h3>
+								<div class="faq__body" itemscope itemprop="acceptedAnswer" itemtype="http://schema.org/Answer">
+									<p itemprop="text">Посетители площадки могут конвертировать их в турнирные очки, реальные деньги или
+										бесплатные вращения.</p>
+								</div>
+							</div>
+							<div class="faq__item" itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+								<h3 class="faq__label" itemprop="name">Что такое Loot Box?</h3>
+								<div class="faq__body" itemscope itemprop="acceptedAnswer" itemtype="http://schema.org/Answer">
+									<p itemprop="text">Это случайный бонус, который доступен по субботам.</p>
+								</div>
+							</div>
+							<div class="faq__item" itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+								<h3 class="faq__label" itemprop="name">Как участвовать в турнирах виртуальной платформы?</h3>
+								<div class="faq__body" itemscope itemprop="acceptedAnswer" itemtype="http://schema.org/Answer">
+									<p itemprop="text">Для этого нужно выбрать соревнование и нажать на кнопку «Вступить».</p>
+								</div>
+							</div>
+							<div class="faq__item" itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+								<h3 class="faq__label" itemprop="name">Что такое «Дашборд»?</h3>
+								<div class="faq__body" itemscope itemprop="acceptedAnswer" itemtype="http://schema.org/Answer">
+									<p itemprop="text">
+										Это вкладка, на которой пользователю представлена вся информация о его активности. Там можно увидеть
+										основной баланс, бонусный счет, доступные акции, заработанные баллы и достигнутый уровень в
+										программе
+										лояльности. На этой же странице разрешено активировать промокоды.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="reviews">
+							<h2>Отзывы реальных игроков</h2>
+							<div class="reviews__item" itemscope itemtype="https://schema.org/Review">
+								<div class="reviews__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+									<p itemprop="name">1KUBIKRUBIK1</p>
+								</div>
+								<div class="reviews__body" itemprop="reviewBody">
+									<p>Добротное казино, деньги стабильно выплачивает после верификации, не было ни разу заминок.Бонусы на
+										депозит как и у всех, а также недавно прислали персонально 700 р бездепозита. Узнал про казино от
+										стримера и решил попробывать. Есть небольшие нюансы, в плане комиссия при кэшауте,но в целом
+										отрицательное что то сказать не могу. </p>
+								</div>
+								<div class="reviews__org" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+									<meta itemprop="name" content="Отзыв о gama casino">
+								</div>
+							</div>
+							<div class="reviews__item" itemscope itemtype="https://schema.org/Review">
+								<div class="reviews__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+									<p itemprop="name">WINBIG288</p>
+								</div>
+								<div class="reviews__body" itemprop="reviewBody">
+									<p>Казино нормальное, можно играть. Платят без особых проблем не быстро, ну мне без разницы я не
+										отменяю выводы. Достаточно большой выбор игр для игры и депозитов акции тоже хватает, по больше бы
+										кодов присылали вообще было тогда сказочно.</p>
+								</div>
+								<div class="reviews__org" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+									<meta itemprop="name" content="Отзыв о gama casino">
+								</div>
+							</div>
+							<div class="reviews__item" itemscope itemtype="https://schema.org/Review">
+								<div class="reviews__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+									<p itemprop="name">Виктор</p>
+								</div>
+								<div class="reviews__body" itemprop="reviewBody">
+									<p>Gama Casino для меня одно из лучших на данный момент, хотя список казино у меня не большой, но есть
+										с чем сравнивать. Хороший выбор игр и разный софт, выплаты по времени норм, но можно и по
+										оперативней иногда Буду продолжать играть у них.</p>
+								</div>
+								<div class="reviews__org" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+									<meta itemprop="name" content="Отзыв о gama casino">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="colophon" class="site-footer bb-aligncenterstyle">
+			<div class="wrapper">
+				<div class="inner">
+					<div class="col-3">
+						<section id="nav_menu-5" class="widget widget_nav_menu">
+							<div class="menu-akcii-container">
+								<ul id="menu-akcii" class="menu">
+									<li id="menu-item-855" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-855">
+										<a href="">Бонусы</a>
+									</li>
+									<li id="menu-item-856" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-856">
+										<a href="">Демо игры</a>
+									</li>
+									<li id="menu-item-880" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-880">
+										<a href="">Регистрация</a>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<div class="col-3">
+						<section id="nav_menu-3" class="widget widget_nav_menu">
+							<div class="menu-kazino-container">
+								<ul id="menu-kazino" class="menu">
+									<li id="menu-item-860" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-860">
+										<a href="">Кэшбэк</a>
+									</li>
+									<li id="menu-item-861" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-861">
+										<a href="">Отзывы</a>
+									</li>
+									<li id="menu-item-879" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-879">
+										<a href="">Скачать</a>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<div class="col-3">
+						<section id="nav_menu-4" class="widget widget_nav_menu">
+							<div class="menu-pomoshh-container">
+								<ul id="menu-pomoshh" class="menu">
+									<li id="menu-item-862" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-862">
+										<a href="">Приложение на Айфон</a>
+									</li>
+									<li id="menu-item-865" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-865">
+										<a href="">Техподдержка</a>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<div class="col-3">
+						<div class="footer-links">
+							<!--noindex-->
+							<a class="x-button-1" href="" target="_blank" rel="nofollow">Скачать</a> <a class="x-button-2" href=""
+								target="_blank" rel="nofollow">Регистрация</a>
+							<!--/noindex-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="site-info">
+					<div class="inner">
+						<div class="col-3">
+							<p>&copy; 2024 Gama Casino</p>
+						</div>
+						<div class="col-9 right-text">
+							<div class="menu-bottom-container">
+								<ul id="menu-bottom" class="menu">
+									<li id="menu-item-53"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-21 current_page_item menu-item-53">
+										<a href="" aria-current="page">Главная</a>
+									</li>
+									<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a
+											href="">Карта сайта</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- .site-info -->
+			</div>
+		</footer>
+		<!-- #colophon -->
+	</div>
+</body>
+
+</html>

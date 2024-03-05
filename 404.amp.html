@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html amp lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Gama</title>
+	<style amp-custom>
+		/*!
+Theme Name: bonus
+Text Domain: bonus
+*/
+
+		/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+		html {
+			line-height: 1.15;
+			-webkit-text-size-adjust: 100%;
+			overflow-x: hidden;
+			box-sizing: border-box;
+			display: block;
+			height: 100%;
+			padding: 0;
+			margin: 0
+		}
+
+		body {
+			margin: 0;
+			font-family: -apple-system, BlinkMacSystemFont, Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 15px;
+			line-height: 1.6;
+			padding: 0;
+			color: rgba(255, 255, 255, .8);
+			background: #1b2b38
+		}
+
+		a {
+			background-color: transparent
+		}
+
+		strong {
+			font-weight: bolder
+		}
+
+		img {
+			border-style: none
+		}
+
+		::-webkit-file-upload-button {
+			-webkit-appearance: button;
+			font: inherit
+		}
+
+		blockquote {
+			margin: 0 0 15px;
+			border-left: 4px solid #7b5cfe;
+			padding-left: 15px;
+			font-size: 17px;
+			font-style: italic;
+			color: #fff
+		}
+
+		*,
+		*::before,
+		*::after {
+			box-sizing: inherit
+		}
+
+		ul,
+		ol {
+			margin: 0 0 15px 15px;
+			padding: 0;
+			list-style: none
+		}
+
+		ul {
+			list-style: disc
+		}
+
+		ol {
+			list-style: decimal
+		}
+
+		img {
+			height: auto;
+			max-width: 100%
+		}
+
+		table {
+			margin: 0 0 15px;
+			width: 100%;
+			border: 1px solid rgba(255, 255, 255, .1);
+			border-collapse: collapse
+		}
+
+		table td {
+			border: 1px solid rgba(255, 255, 255, .1);
+			padding: 10px 15px
+		}
+
+		@media screen and (max-width:767px) {
+			.tablex {
+				width: 100%;
+				overflow: auto;
+				border: 1px solid rgba(255, 255, 255, .1);
+				box-sizing: border-box;
+				margin: 20px 0 20px
+			}
+
+			.tablex table {
+				margin: 0 0 0 0;
+				border: none;
+				border-radius: 0
+			}
+		}
+
+		a {
+			color: #ff7a00;
+			text-decoration: none
+		}
+
+		a:hover,
+		a:active {
+			color: #fff;
+			text-decoration: none
+		}
+
+		a:hover,
+		a:active {
+			outline: 0
+		}
+
+		.main-navigation {
+			display: block;
+			width: 100%
+		}
+
+		.main-navigation ul {
+			list-style: none;
+			margin: 0
+		}
+
+		.main-navigation li {
+			position: relative;
+			margin-left: 25px
+		}
+
+		.main-navigation a {
+			display: block;
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase
+		}
+
+		.main-navigation a:hover {
+			color: #ff7a00
+		}
+
+		@media screen and (min-width:992px) {
+
+			.main-navigation ul {
+				display: flex
+			}
+		}
+
+		.custom-header {
+			background: #13212d;
+			padding: 15px 0 10px;
+			margin-bottom: 15px
+		}
+
+		.home .custom-header {
+			margin-bottom: 0
+		}
+
+		#colophon {
+			background: #151a22;
+			padding: 50px 0 30px
+		}
+
+		#colophon .widget ul {
+			margin: 0;
+			padding: 0;
+			list-style: none
+		}
+
+		#colophon .widget ul li {
+			margin: 0 0 7px
+		}
+
+		#colophon .widget ul li a {
+			color: #fff;
+			font-size: 15px
+		}
+
+		#colophon .widget ul li a:hover {
+			color: #ff7a00
+		}
+
+		.custom-logo-link {
+			display: inline-block
+		}
+
+		h1,
+		h2,
+		h3,
+		.h2 {
+			line-height: 1.3;
+			clear: both;
+			margin: 0 0 15px;
+			font-weight: 700;
+			color: #fff
+		}
+
+		h1 {
+			font-size: 28px
+		}
+
+		h2,
+		.h2 {
+			font-size: 25px
+		}
+
+		h3 {
+			font-size: 22px
+		}
+
+		.home h2,
+		.home h1,
+		.home .h2 {
+			margin: 0 0 15px;
+			color: #fff;
+			font-weight: 400;
+			font-size: 20px;
+			text-transform: uppercase
+		}
+
+		.home h3 {
+			font-weight: 400;
+			font-size: 18px
+		}
+
+		p {
+			margin: 0 0 15px
+		}
+
+		#site-navigation {
+			padding-top: 6px;
+			background: transparent
+		}
+
+		.wrapper {
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+			position: relative;
+			box-sizing: border-box
+		}
+
+		.inner {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin-right: -15px;
+			margin-left: -15px
+		}
+
+		.col-3,
+		.col-4,
+		.col-5,
+		.col-9 {
+			position: relative;
+			width: 100%;
+			min-height: 1px;
+			padding-right: 15px;
+			padding-left: 15px
+		}
+
+		#welcome {
+			position: relative;
+			padding: 30px;
+			font-weight: 700;
+			color: #fff;
+			margin: 15px 0;
+			position: relative;
+			background: url(../img/banner.jpg) no-repeat right center;
+			background-size: cover;
+			height: 300px
+		}
+
+		.bonus {
+			font-size: 30px
+		}
+
+		#welcome a.x-button-2 {
+			display: block;
+			max-width: 200px;
+			padding: 10px;
+			margin: 30px 0
+		}
+
+		@media (max-width:991px) {
+			#welcome {
+				background-position: left center;
+				height: auto
+			}
+		}
+
+		@media (max-width:410px) {
+			.bonus {
+				font-size: 24px
+			}
+
+			#welcome {
+				padding: 30px 15px
+			}
+		}
+
+		a.x-button-1 {
+			text-transform: uppercase;
+			padding: 10px 30px;
+			color: #fff;
+			background: #7b5cfe;
+			font-weight: 700;
+			text-align: center
+		}
+
+		a.x-button-2 {
+			text-align: center;
+			text-transform: uppercase;
+			padding: 10px 30px;
+			font-weight: 700;
+			color: #111;
+			background: #dafe31
+		}
+
+		.site-top {
+			text-align: center;
+			padding-top: 6px
+		}
+
+		.site-top a {
+			margin-right: 10px
+		}
+
+		.site-info {
+			font-size: 13px;
+			padding-top: 30px
+		}
+
+		.site-info p {
+			margin: 0
+		}
+
+		#casino-news .inner {
+			margin-left: -7px;
+			margin-right: -7px
+		}
+
+		#casino a {
+			padding: 10px;
+			color: #fff;
+			background: #344b5e;
+			font-weight: 700;
+			margin: 15px auto;
+			display: block;
+			max-width: 230px;
+			text-align: center
+		}
+
+		#casino-news .col-3 {
+			padding-left: 7px;
+			padding-right: 7px
+		}
+
+		.developers {
+			text-align: center;
+			border-top: 1px solid #2f3542;
+			margin-top: 30px;
+			padding: 25px 0 20px
+		}
+
+		.developers img {
+			margin: 5px 15px;
+			max-height: 35px;
+			max-width: 140px;
+			filter: invert(1) opacity(.3)
+		}
+
+		.money {
+			text-align: center;
+			border-top: 1px solid #2f3542;
+			border-bottom: 1px solid #2f3542;
+			padding: 25px 0 20px
+		}
+
+		.money img {
+			margin: 5px 15px;
+			max-width: 120px;
+			max-height: 25px;
+			filter: invert(1) opacity(.3)
+		}
+
+		img.custom-logo {
+			width: 150px
+		}
+
+		.footer-links {
+			padding: 10px 0 10px
+		}
+
+		.footer-links a {
+			display: block;
+			margin: 0 0 15px
+		}
+
+		.home-content {
+			background: #101c26;
+			margin: 0 0 15px;
+			overflow: hidden
+		}
+
+		.home-content .entry-title {
+			padding: 5px 15px 15px;
+			min-height: 80px
+		}
+
+		#front-page .home-content .entry-title a {
+			color: #dafe31;
+			display: block;
+			font-weight: 700;
+			line-height: 1.3;
+			text-decoration: none
+		}
+
+		#front-page .home-content .entry-title a:hover {
+			color: #fff
+		}
+
+		.right-text {
+			text-align: right
+		}
+
+		.site-info ul {
+			margin: 0 0 15px
+		}
+
+		.site-info ul li {
+			display: inline-block;
+			margin-left: 15px
+		}
+
+		.wrap-inner {
+			background: #13212d;
+			padding: 15px;
+			margin-bottom: 15px
+		}
+
+		#casino-news .wrap-inner {
+			padding: 15px 15px 1px
+		}
+
+		@media (min-width:992px) {
+
+			.col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 25%;
+				flex: 0 0 25%;
+				max-width: 25%
+			}
+
+			.col-4 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 33.333333%;
+				flex: 0 0 33.333333%;
+				max-width: 33.333333%
+			}
+
+			.col-5 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 41.666667%;
+				flex: 0 0 41.666667%;
+				max-width: 41.666667%
+			}
+
+			.col-9 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 75%;
+				flex: 0 0 75%;
+				max-width: 75%
+			}
+		}
+
+		@media (min-width:576px) {
+			.wrapper {
+				max-width: 540px
+			}
+		}
+
+		@media (min-width:768px) {
+			.wrapper {
+				max-width: 720px
+			}
+		}
+
+		@media (min-width:992px) {
+			.wrapper {
+				max-width: 960px
+			}
+		}
+
+		@media (min-width:1230px) {
+			.wrapper {
+				max-width: 1200px
+			}
+		}
+
+		@media screen and (min-width:992px) {
+
+			.nav-menu {
+				float: right
+			}
+		}
+
+		@media (min-width:992px) and (max-width:1229px) {
+
+			.site-top a.x-button-1,
+			.site-top a.x-button-2 {
+				padding: 5px 20px
+			}
+		}
+
+		@media screen and (max-width:1229px) {
+
+			.site-info ul {
+				padding-top: 5px
+			}
+
+			.site-info ul li {
+				margin-left: 0;
+				margin-right: 15px
+			}
+		}
+
+		@media screen and (max-width:991px) {
+
+			.site-top {
+				padding: 20px 0 10px
+			}
+
+			.custom-header {
+				padding: 15px 0 0
+			}
+
+			#casino-news .col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 50%;
+				flex: 0 0 50%;
+				max-width: 50%
+			}
+
+			.site-info ul li {
+				margin: 0 8px 5px
+			}
+
+			#casino-news img {
+				width: 100%
+			}
+
+			#colophon .site-info .col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%
+			}
+
+			.site-info,
+			.col-9.right-text {
+				text-align: center
+			}
+
+			#colophon .col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 50%;
+				flex: 0 0 50%;
+				max-width: 50%
+			}
+
+			#colophon .col-3 {
+				padding-bottom: 20px
+			}
+
+			.main-navigation {
+				padding-top: 27px;
+				text-align: center
+			}
+
+			.custom-header .col-3,
+			.custom-header .col-4 {
+				text-align: center
+			}
+
+			.site-top a {
+				margin-right: 0
+			}
+
+			.site-top a.x-button-1 {
+				margin-right: 10px
+			}
+
+			.main-navigation ul {
+				padding: 0;
+				margin: 10px 0 20px
+			}
+
+			.main-navigation li {
+				display: inline-block;
+				margin-right: 10px;
+				margin-left: 10px
+			}
+
+			.nav-menu {
+				padding-top: 0px
+			}
+		}
+
+		@media screen and (max-width:767px) {
+			.developers img {
+				margin: 5px 7px;
+			}
+
+			.money img {
+				margin: 5px 7px
+			}
+
+			#casino-news .col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%
+			}
+
+			.home-content .entry-title {
+				min-height: auto
+			}
+		}
+
+		@media screen and (max-width:450px) {
+			#colophon .col-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%
+			}
+		}
+
+		@media screen and (max-width:370px) {
+
+			.footer-links a {
+				margin-right: 0;
+				margin-bottom: 15px;
+				display: block
+			}
+		}
+
+		@media screen and (max-width:360px) {
+			.site-top a {
+				display: block
+			}
+
+			.site-top a.x-button-1 {
+				margin-right: 0;
+				margin-bottom: 10px
+			}
+
+			.main-navigation li {
+				display: block;
+				margin-right: 0;
+				margin-left: 0;
+				margin-bottom: 5px
+			}
+
+			.main-navigation li a {
+				background: #1b2b38;
+				padding: 7px
+			}
+		}
+
+		body {
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+			max-width: var(--wp--style--global--content-size);
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.wp-block-navigation a:where(:not(.wp-element-button)) {
+			color: inherit;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+	</style>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<style amp-boilerplate>
+		body {
+			-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			animation: -amp-start 8s steps(1, end) 0s 1 normal both
+		}
+
+		@-webkit-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-moz-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-ms-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-o-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+	</style><noscript>
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+		</style>
+	</noscript>
+	<link rel="canonical" href="404.html">
+</head>
+
+<body class="home page-template page-template-home page-template-home-php page page-id-21 wp-custom-logo">
+	<div id="page" class="site">
+		<header id="masthead" class="site-header">
+			<div class="custom-header">
+				<div class="wrapper">
+					<div class="inner">
+						<div class="col-3">
+							<a href="" class="custom-logo-link" rel="home" aria-current="page">
+								<img width="600" height="152" src="content/img/logo.png" class="custom-logo" alt="" decoding="async"
+									fetchpriority="high" srcset="content/img/logo.png 600w, content/img/logo-300x76.png 300w"
+									sizes="(max-width: 600px) 100vw, 600px" />
+							</a>
+						</div>
+						<div class="col-4">
+							<div class="site-top">
+								<!--noindex-->
+								<a class="x-button-1" href="" target="_blank" rel="nofollow">Вход</a> <a class="x-button-2" href=""
+									target="_blank" rel="nofollow">Регистрация</a>
+								<!--/noindex-->
+							</div>
+						</div>
+						<div class="col-5">
+							<nav id="site-navigation" class="main-navigation">
+								<div class="menu-menu-1-container">
+									<ul id="primary-menu" class="nav-menu">
+										<li id="menu-item-23"
+											class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a
+												href="">Статьи</a></li>
+									</ul>
+								</div>
+							</nav>
+							<!-- #site-navigation -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- #masthead -->
+		<div class="wrapper">
+			<div id="welcome">
+				<div class="bonus">Бонус понедельника</div>
+				<div class="bonus">50% на депозит</div>
+				<a class="x-button-2" href="" target="_blank" rel="nofollow">Получить</a>
+			</div>
+		</div>
+
+		<div id="front-page">
+			<div id="casino">
+				<div class="wrapper">
+					<div class="wrap-inner">
+						<h1 style="text-align: center;">Страница не найдена</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="colophon" class="site-footer bb-aligncenterstyle">
+			<div class="wrapper">
+				<div class="inner">
+					<div class="col-3">
+						<section id="nav_menu-5" class="widget widget_nav_menu">
+							<div class="menu-akcii-container">
+								<ul id="menu-akcii" class="menu">
+									<li id="menu-item-855" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-855">
+										<a href="">Бонусы</a>
+									</li>
+									<li id="menu-item-856" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-856">
+										<a href="">Демо игры</a>
+									</li>
+									<li id="menu-item-880" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-880">
+										<a href="">Регистрация</a>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<div class="col-3">
+						<section id="nav_menu-3" class="widget widget_nav_menu">
+							<div class="menu-kazino-container">
+								<ul id="menu-kazino" class="menu">
+									<li id="menu-item-860" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-860">
+										<a href="">Кэшбэк</a>
+									</li>
+									<li id="menu-item-861" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-861">
+										<a href="">Отзывы</a>
+									</li>
+									<li id="menu-item-879" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-879">
+										<a href="">Скачать</a>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<div class="col-3">
+						<section id="nav_menu-4" class="widget widget_nav_menu">
+							<div class="menu-pomoshh-container">
+								<ul id="menu-pomoshh" class="menu">
+									<li id="menu-item-862" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-862">
+										<a href="">Приложение на Айфон</a>
+									</li>
+									<li id="menu-item-865" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-865">
+										<a href="">Техподдержка</a>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<div class="col-3">
+						<div class="footer-links">
+							<!--noindex-->
+							<a class="x-button-1" href="" target="_blank" rel="nofollow">Скачать</a> <a class="x-button-2" href=""
+								target="_blank" rel="nofollow">Регистрация</a>
+							<!--/noindex-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="site-info">
+					<div class="inner">
+						<div class="col-3">
+							<p>&copy; 2024 Gama Casino</p>
+						</div>
+						<div class="col-9 right-text">
+							<div class="menu-bottom-container">
+								<ul id="menu-bottom" class="menu">
+									<li id="menu-item-53"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-21 current_page_item menu-item-53">
+										<a href="" aria-current="page">Главная</a>
+									</li>
+									<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a
+											href="">Карта сайта</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- .site-info -->
+			</div>
+		</footer>
+		<!-- #colophon -->
+	</div>
+</body>
+
+</html>
